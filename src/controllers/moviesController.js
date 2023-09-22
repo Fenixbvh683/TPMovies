@@ -26,11 +26,11 @@ module.exports = {
 
     new : (req,res) => {
         db.Movie.findAll({
-            order : [
+            order: [
                 ['release_date', 'DESC']
             ]
         }) .then(movies => {
-            return res.render('newesMovies', {
+            return res.render('newestMovies', {
                 movies
             })
         })

@@ -3,7 +3,7 @@
 //const { sequelize } = require(".");
 
 module.exports = (sequelize, dataTypes) => {
-    const alias = "Movies";
+    const alias = "Movie";
 
     const cols = {
         id : {

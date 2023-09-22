@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    const alias = "Genres";
+    const alias = "Genre";
 
     const cols = {
         id : {
@@ -31,7 +31,7 @@ module.exports = (sequelize, dataTypes) => {
         underscored : true
     }
 
-    const Movie = sequelize.define(alias, cols, config);
+    const Genre = sequelize.define(alias, cols, config);
 
-    return Movie
+    return Genre
 }
